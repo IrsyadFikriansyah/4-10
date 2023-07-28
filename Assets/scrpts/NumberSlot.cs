@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class NumberSlot : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private int number;
+    private int number;
     private bool selected;
     void Start()
     {

@@ -15,21 +15,17 @@ public class FourToTenMechanism : MonoBehaviour
     private int level;
     public List<NumberSlot> NSlot = new List<NumberSlot>();
     public List<OperatorSlot> OSlot = new List<OperatorSlot>();
+    public List<OperationUsed> OUSlot = new List<OperationUsed>();
 
     private int slot1,slot2;
-    private int NumSelected1, NumSelected2;
-    private int OperationSelected;
+    private int NumSelected1, NumSelected2, lastOperandSelected;
+    private string OperationSelected;
+    private string finalFormula;
 
     // Start is called before the first frame update
     void Start()
     {
         Init();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void LevelUp(){
@@ -47,7 +43,7 @@ public class FourToTenMechanism : MonoBehaviour
         {
             int number = puzzleLevel[index][i];
             Debug.Log(number);
-            //slot.SetNumber(number);
+            slot.SetNumber(number);
             i++;
         }
     }
@@ -59,22 +55,45 @@ public class FourToTenMechanism : MonoBehaviour
     }
 
     public void SelectNumber(int i){
-        Debug.Log("Pressed");
         if(slot1 == -1){
             slot1 = NSlot[i].GetNumber();
-            Debug.Log("Pressed Slot1: "+slot1);
             NSlot[i].Selected();
             NumSelected1 = i;
         }
         else if(slot2 == -1){
-            Debug.Log("Pressed Slot2: "+slot2);
             slot2 = NSlot[i].GetNumber();
             NumSelected2 = i;
-        }else{
             NSlot[NumSelected2].SetNumber(slot1);
             NSlot[NumSelected1].SetNumber(slot2);
+            NSlot[NumSelected1].Selected();
             slot1=slot2=-1;
         }
-        
     }
+
+    public void SelectOperand(int i){
+        OperationSelected = OSlot[i].GetOperand();
+        lastOperandSelected = i;
+    }
+
+    public void UseOperand(int i){
+        if(lastOperandSelected == -1){
+            Debug.Log("No Operand used");
+        }else{
+            OUSlot[i].SetOperation(OperationSelected);
+            OSlot[lastOperandSelected].Selected();
+            lastOperandSelected = -1;
+            OperationSelected = null;
+        }
+    }
+
+    public void submit(){
+
+        string finalFormula = NSlot[0].GetNumber().ToString() + OUSlot[0].GetOperation() +
+                      NSlot[1].GetNumber().ToString() + OUSlot[1].GetOperation() +
+                      NSlot[2].GetNumber().ToString() + OUSlot[2].GetOperation() +
+                      NSlot[3].GetNumber().ToString();
+                      
+        Debug.Log(finalFormula);
+    }
+
 }
