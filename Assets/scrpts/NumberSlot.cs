@@ -32,10 +32,10 @@ public class NumberSlot : MonoBehaviour
     public void Selected(){
         selected = !selected;
         if(selected ==  false){
-            Debug.Log("Turn Off");
+            // Debug.Log("Turn Off");
         }
         else{
-            Debug.Log("Turn On");
+            // Debug.Log("Turn On");
         }
     }
 }
