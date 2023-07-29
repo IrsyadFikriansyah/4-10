@@ -33,6 +33,7 @@ public class FourToTenMechanism : MonoBehaviour
         if(level<2){
             level++;
             ChangeNumberLists(level);
+            ResetUseOperand();
         }else{
             Debug.Log("You Win");
         }
@@ -195,6 +196,13 @@ public class FourToTenMechanism : MonoBehaviour
         Debug.Log(answer);
 
         checkAnswer(answer);
+    }
+
+    public void ResetUseOperand(){
+        foreach (var slot in OUSlot)
+        {
+            slot.SetOperation("");
+        }
     }
 
 }
