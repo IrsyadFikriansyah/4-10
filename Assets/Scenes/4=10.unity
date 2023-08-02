@@ -337,6 +337,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e4f7c6fa1ca024ca4a6d5e0a25c6e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chooseStateSlot: {fileID: 21300000, guid: dedc5ab9234726249bd8b87d37efe2f8, type: 3}
+  normalState: {fileID: 21300000, guid: dfabb95f7e4d5034591c7104957415f7, type: 3}
 --- !u!1 &162550523
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,6 +592,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51efb9d10d8c9664da1726afabcf6df2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chooseStateSlot: {fileID: 21300000, guid: dedc5ab9234726249bd8b87d37efe2f8, type: 3}
+  normalState: {fileID: 21300000, guid: dfabb95f7e4d5034591c7104957415f7, type: 3}
 --- !u!1 &202680159
 GameObject:
   m_ObjectHideFlags: 0
@@ -1516,6 +1520,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51efb9d10d8c9664da1726afabcf6df2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chooseStateSlot: {fileID: 21300000, guid: dedc5ab9234726249bd8b87d37efe2f8, type: 3}
+  normalState: {fileID: 21300000, guid: dfabb95f7e4d5034591c7104957415f7, type: 3}
 --- !u!1 &465282418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1875,6 +1881,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e4f7c6fa1ca024ca4a6d5e0a25c6e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chooseStateSlot: {fileID: 21300000, guid: dedc5ab9234726249bd8b87d37efe2f8, type: 3}
+  normalState: {fileID: 21300000, guid: dfabb95f7e4d5034591c7104957415f7, type: 3}
 --- !u!1 &674500828
 GameObject:
   m_ObjectHideFlags: 0
@@ -1967,6 +1975,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51efb9d10d8c9664da1726afabcf6df2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chooseStateSlot: {fileID: 21300000, guid: dedc5ab9234726249bd8b87d37efe2f8, type: 3}
+  normalState: {fileID: 21300000, guid: dfabb95f7e4d5034591c7104957415f7, type: 3}
 --- !u!114 &674500833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2035,6 +2045,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51efb9d10d8c9664da1726afabcf6df2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chooseStateSlot: {fileID: 0}
+  normalState: {fileID: 0}
 --- !u!1 &710641657
 GameObject:
   m_ObjectHideFlags: 0
@@ -3328,6 +3340,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e4f7c6fa1ca024ca4a6d5e0a25c6e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chooseStateSlot: {fileID: 21300000, guid: dedc5ab9234726249bd8b87d37efe2f8, type: 3}
+  normalState: {fileID: 21300000, guid: dfabb95f7e4d5034591c7104957415f7, type: 3}
 --- !u!1 &1426935543
 GameObject:
   m_ObjectHideFlags: 0
@@ -4015,6 +4029,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e4f7c6fa1ca024ca4a6d5e0a25c6e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chooseStateSlot: {fileID: 21300000, guid: dedc5ab9234726249bd8b87d37efe2f8, type: 3}
+  normalState: {fileID: 21300000, guid: dfabb95f7e4d5034591c7104957415f7, type: 3}
 --- !u!1 &1837381229
 GameObject:
   m_ObjectHideFlags: 0
@@ -4375,6 +4391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51efb9d10d8c9664da1726afabcf6df2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chooseStateSlot: {fileID: 21300000, guid: dedc5ab9234726249bd8b87d37efe2f8, type: 3}
+  normalState: {fileID: 21300000, guid: dfabb95f7e4d5034591c7104957415f7, type: 3}
 --- !u!1 &2118300848
 GameObject:
   m_ObjectHideFlags: 0

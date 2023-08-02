@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-public class OperatorSlot : MonoBehaviour
+public class OperatorSlot :SlotBase
 {
     // Start is called before the first frame update
     private string operand;
@@ -26,6 +26,7 @@ public class OperatorSlot : MonoBehaviour
         else{
             Debug.Log("Turn On");
         }
+        ChangeSlotStateImage(selected);
     }
 
 }

@@ -8,9 +8,8 @@ public class OperationUsed : MonoBehaviour
 {
     // Start is called before the first frame update
     private string operation;
-    void Start()
-    {
-        
+    public void EmptySlot(){
+        GetComponentInChildren<TMP_Text>().text = "";
     }
 
     public void SetOperation(string newOperation){

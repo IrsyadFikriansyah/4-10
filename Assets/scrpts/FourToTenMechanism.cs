@@ -53,10 +53,15 @@ public class FourToTenMechanism : MonoBehaviour
     private void Init(){
         level = 0;
         slot1=slot2=-1;
+        lastOperandSelected = -1;
         ChangeNumberLists(0);
+        ResetUseOperand();
     }
 
     public void SelectNumber(int i){
+        if(lastOperandSelected != -1){
+            return;
+        }
         if(slot1 == -1){
             slot1 = NSlot[i].GetNumber();
             NSlot[i].Selected();
@@ -73,8 +78,20 @@ public class FourToTenMechanism : MonoBehaviour
     }
 
     public void SelectOperand(int i){
-        OperationSelected = OSlot[i].GetOperand();
-        lastOperandSelected = i;
+        if(slot1  != -1){
+            return;
+        }
+        else{
+        if(lastOperandSelected != -1){
+            OSlot[lastOperandSelected].Selected();
+            OSlot[i].Selected();
+        }else{
+            OSlot[i].Selected();
+        }
+            Debug.Log("last operand used: "+lastOperandSelected+"; current used: "+i);
+            OperationSelected = OSlot[i].GetOperand();
+            lastOperandSelected = i;
+        }
     }
 
     public void UseOperand(int i){
